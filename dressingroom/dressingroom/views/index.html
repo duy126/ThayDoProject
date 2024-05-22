@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CyberLearn Dressing Room</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./../assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card">
+            <div class="text-center">
+              <img src="./../assets/images/cybersoft.png" alt="Card image" />
+            </div>
+
+            <div class="card-body">
+              <h4 class="card-title text-center">
+                CyberLearn - Học lập trình trực tuyến - Dự án thử đồ trực tuyến
+                - Virtual Dressing Room
+              </h4>
+            </div>
+          </div>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <ul class="nav nav-pills"></ul>
+
+          <div class="well">
+            <div class="tab-content">
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button
+                    class="nav-link active"
+                    id="nav-ao-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-ao"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-ao"
+                    aria-selected="true"
+                  >
+                    Áo
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="nav-quan-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-quan"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-quan"
+                    aria-selected="true"
+                  >
+                    Quần
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="nav-giayDep-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-giayDep"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-giayDep"
+                    aria-selected="true"
+                  >
+                    Giày dép
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="nav-tuiXach-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-tuiXach"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-tuiXach"
+                    aria-selected="true"
+                  >
+                    Túi xách
+                  </button>
+
+                  <button
+                    class="nav-link"
+                    id="nav-dayChuyen-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-dayChuyen"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-dayChuyen"
+                    aria-selected="true"
+                  >
+                    Dây chuyền
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="nav-kieuToc-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-kieuToc"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-kieuToc"
+                    aria-selected="false"
+                  >
+                    Kiểu tóc
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="nav-nen-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-nen"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-nen"
+                    aria-selected="false"
+                  >
+                    Nền
+                  </button>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="nav-ao"
+                  role="tabpanel"
+                  aria-labelledby="nav-ao-tab"
+                >
+                  <div class="row">
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/clothes/topcloth1_show.jpg"
+                          alt=""
+                        />
+                        <h2>top cloth 1</h2>
+                        <button onclick="changerAo(1)" class="btn btn-primary">
+                          thử đồ
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/clothes/topcloth2_show.jpg"
+                          alt=""
+                        />
+                        <h2>top cloth 2</h2>
+                        <button onclick="changerAo(2)" class="btn btn-primary">
+                          thử đồ
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/clothes/topcloth3_show.jpg"
+                          alt=""
+                        />
+                        <h2>top cloth 3</h2>
+                        <button onclick="changerAo(3)" class="btn btn-primary">
+                          thử đồ
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/clothes/topcloth4_show.jpg"
+                          alt=""
+                        />
+                        <h2>top cloth 4</h2>
+                        <button onclick="changerAo(4)" class="btn btn-primary">
+                          thử đồ
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/clothes/topcloth5_show.jpg"
+                          alt=""
+                        />
+                        <h2>top cloth 5</h2>
+                        <button onclick="changerAo(5)" class="btn btn-primary">
+                          thử đồ
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/clothes/topcloth6_show.jpg"
+                          alt=""
+                        />
+                        <h2>top cloth 6</h2>
+                        <button onclick="changerAo(6)" class="btn btn-primary">
+                          thử đồ
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="nav-quan"
+                  role="tabpanel"
+                  aria-labelledby="nav-quan-tab"
+                >
+                  <div class="row">
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/clothes/botcloth1_show.jpg"
+                          alt=""
+                        />
+                        <h2>bot cloth 1</h2>
+                        <button
+                          class="btn btn-primary"
+                          onclick="changerQuan(1)"
+                        >
+                          thử đồ
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/clothes/botcloth2_show.jpg"
+                          alt=""
+                        />
+                        <h2>bot cloth 2</h2>
+                        <button
+                          class="btn btn-primary"
+                          onclick="changerQuan(2)"
+                        >
+                          thử đồ
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/clothes/botcloth3_show.jpg"
+                          alt=""
+                        />
+                        <h2>bot cloth 3</h2>
+                        <button
+                          class="btn btn-primary"
+                          onclick="changerQuan(3)"
+                        >
+                          thử đồ
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/clothes/botcloth4_show.jpg"
+                          alt=""
+                        />
+                        <h2>bot cloth 4</h2>
+                        <button
+                          class="btn btn-primary"
+                          onclick="changerQuan(4)"
+                        >
+                          thử đồ
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/clothes/botcloth5_show.jpg"
+                          alt=""
+                        />
+                        <h2>bot cloth 5</h2>
+                        <button
+                          class="btn btn-primary"
+                          onclick="changerQuan(5)"
+                        >
+                          thử đồ
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="nav-giayDep"
+                  role="tabpanel"
+                  aria-labelledby="nav-giayDep-tab"
+                >
+                  <div class="row">
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/shoes/shoes1_show.jpg"
+                          alt=""
+                        />
+                        <h2>shoes 1</h2>
+                        <button
+                          class="btn btn-primary"
+                          onclick="changerGiayDep(1)"
+                        >
+                          thử đồ
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/shoes/shoes2_show.jpg"
+                          alt=""
+                        />
+                        <h2>shoes 2</h2>
+                        <button
+                          class="btn btn-primary"
+                          onclick="changerGiayDep(2)"
+                        >
+                          thử đồ
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/shoes/shoes3_show.jpg"
+                          alt=""
+                        />
+                        <h2>shoes 3</h2>
+                        <button
+                          class="btn btn-primary"
+                          onclick="changerGiayDep(3)"
+                        >
+                          thử đồ
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/shoes/shoes4_show.jpg"
+                          alt=""
+                        />
+                        <h2>shoes 4</h2>
+                        <button
+                          class="btn btn-primary"
+                          onclick="changerGiayDep(4)"
+                        >
+                          thử đồ
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/shoes/shoes5_show.jpg"
+                          alt=""
+                        />
+                        <h2>shoes 5</h2>
+                        <button
+                          class="btn btn-primary"
+                          onclick="changerGiayDep(5)"
+                        >
+                          thử đồ
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="nav-tuiXach"
+                  role="tabpanel"
+                  aria-labelledby="nav-tuiXach-tab"
+                >
+                  <div class="row">
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/handbags/handbag1_show.jpg"
+                          alt=""
+                        />
+                        <h2>handbag 1</h2>
+                        <button
+                          class="btn btn-primary"
+                          onclick="changerTuiXach(1)"
+                        >
+                          thử đồ
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/handbags/handbag2_show.jpg"
+                          alt=""
+                        />
+                        <h2>handbag 2</h2>
+                        <button
+                          class="btn btn-primary"
+                          onclick="changerTuiXach(2)"
+                        >
+                          thử đồ
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/handbags/handbag3_show.jpg"
+                          alt=""
+                        />
+                        <h2>handbag 3</h2>
+                        <button
+                          class="btn btn-primary"
+                          onclick="changerTuiXach(3)"
+                        >
+                          thử đồ
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col"></div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="nav-dayChuyen"
+                  role="tabpanel"
+                  aria-labelledby="nav-dayChuyen-tab"
+                >
+                  <div class="row">
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/necklaces/necklace1_show.jpg"
+                          alt=""
+                        />
+                        <h2>necklace 1</h2>
+                        <button
+                          class="btn btn-primary"
+                          onclick="changerDayChuyen(1)"
+                        >
+                          thử đồ
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/necklaces/necklace2_show.jpg"
+                          alt=""
+                        />
+                        <h2>necklace 2</h2>
+                        <button
+                          class="btn btn-primary"
+                          onclick="changerDayChuyen(2)"
+                        >
+                          thử đồ
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/necklaces/necklace3_show.jpg"
+                          alt=""
+                        />
+                        <h2>necklace 3</h2>
+                        <button
+                          class="btn btn-primary"
+                          onclick="changerDayChuyen(3)"
+                        >
+                          thử đồ
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col"></div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="nav-kieuToc"
+                  role="tabpanel"
+                  aria-labelledby="nav-kieuToc-tab"
+                >
+                  <div class="row">
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/hairstyle/hairstyle1_show.jpg"
+                          alt=""
+                        />
+                        <h2>hair Style 1</h2>
+                        <button
+                          class="btn btn-primary"
+                          onclick="changerKieuToc(1)"
+                        >
+                          thử đồ
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/hairstyle/hairstyle2_show.jpg"
+                          alt=""
+                        />
+                        <h2>hair Style 2</h2>
+                        <button
+                          class="btn btn-primary"
+                          onclick="changerKieuToc(2)"
+                        >
+                          thử đồ
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/hairstyle/hairstyle3_show.jpg"
+                          alt=""
+                        />
+                        <h2>hair Style 3</h2>
+                        <button
+                          class="btn btn-primary"
+                          onclick="changerKieuToc(3)"
+                        >
+                          thử đồ
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col"></div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="nav-nen"
+                  role="tabpanel"
+                  aria-labelledby="nav-nen-tab"
+                >
+                  <div class="row">
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/background/background1_show.jpg"
+                          alt=""
+                        />
+                        <h2>background 1</h2>
+                        <button class="btn btn-primary" onclick="changerNen(1)">
+                          đổi nền
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/background/background2_show.jpg"
+                          alt=""
+                        />
+                        <h2>background 2</h2>
+                        <button class="btn btn-primary" onclick="changerNen(2)">
+                          đổi nền
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/background/background3_show.jpg"
+                          alt=""
+                        />
+                        <h2>background 3</h2>
+                        <button class="btn btn-primary" onclick="changerNen(3)">
+                          đổi nền
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/background/background4_show.jpg"
+                          alt=""
+                        />
+                        <h2>background 4</h2>
+                        <button class="btn btn-primary" onclick="changerNen(4)">
+                          đổi nền
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/background/background5_show.jpg"
+                          alt=""
+                        />
+                        <h2>background 5</h2>
+                        <button class="btn btn-primary" onclick="changerNen(5)">
+                          đổi nền
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/background/background6_show.jpg"
+                          alt=""
+                        />
+                        <h2>background 6</h2>
+                        <button class="btn btn-primary" onclick="changerNen(6)">
+                          đổi nền
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img
+                          src="../assets/images/background/background7_show.jpg"
+                          alt=""
+                        />
+                        <h2>background 7</h2>
+                        <button class="btn btn-primary" onclick="changerNen(7)">
+                          đổi nền
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contain" id="thisIsBody">
+            <div class="body"></div>
+            <div class="model"></div>
+            <div class="hairstyle" id="kieuToc"></div>
+            <div class="necklace" id="dayChuyen"></div>
+            <div class="bikinitop" id="ao"></div>
+            <div class="bikinibottom" id="quan"></div>
+            <div class="handbag" id="tuiXach"></div>
+            <div class="feet" id="giayDep"></div>
+            <div class="background" id="nen"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./../models/ListChosen.js"></script>
+    <script src="./../models/ChoseItem.js"></script>
+    <script src="./../utils/callData.js"></script>
+    <script src="./../controllers/main.js"></script>
+  </body>
+</html>
